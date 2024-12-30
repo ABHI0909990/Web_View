@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <EditText
+        android:id="@+id/urlInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter URL"
+        android:inputType="textUri"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp">
+
+        <Button
+            android:id="@+id/goButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange"
+            android:layout_weight="1"
+            android:text="Go"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/white"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/clearHistoryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear History"
+            android:padding="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:elevation="4dp" />
+
+</LinearLayout>
+
